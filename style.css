@@ -9,12 +9,15 @@
 }
 
 * {
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat, sans-serif;
     margin: 0;
-    padding: 0px;
+    padding: 0;
     box-sizing: border-box;
     list-style-type: none;
+}
 
+a {
+    text-decoration: none;
 }
 
 :root {
@@ -28,12 +31,13 @@
 body {
     background: white;
     min-height: 100vh;
-
-
+    margin: 0 auto;
+    text-align: center;
 }
 
 nav {
-    max-width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
     height: 90px;
     display: flex;
     justify-content: center;
@@ -45,13 +49,17 @@ nav {
 
 nav ul {
 
-    padding: 0;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-nav ul li {
+nav li {
     margin: 10px;
+    font-weight: 750;
+    font-size: 0.9rem;
+    position: relative;
+    padding: 20px 0px;
 }
 
 nav ul li a {
@@ -70,6 +78,7 @@ nav ul li a {
 nav ul li a:hover,
 nav ul li a.active {
     color: var(--color3);
+    transition: 1s;
     /* Couleur du lien lors du survol ou si actif */
 }
 
@@ -107,23 +116,30 @@ nav ul li a.active::before {
 
 
 .main-header {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    background: url(./assets/img/bg.jpg)center/cover fixed;
-    align-items: center;
-    padding: 60px;
+    background: url(./assets/img/bg.jpg) no-repeat center/cover fixed;
     color: white;
+    padding: 180px;
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+
 }
 
+h1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 50px 50px;
+}
 
-.main-header h1 {
+/*.main-header h1 {
     font-size: 1.5rem;
     text-transform: uppercase;
     color: white;
     padding: 25px;
     letter-spacing: 1px;
-}
+}*/
 
 .main-header button {
     display: block;
@@ -132,9 +148,9 @@ nav ul li a.active::before {
     align-items: center;
     border-color: white;
     background: none;
-    width: 22%;
+    width: 28%;
     padding: 20px;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     color: white;
     font-weight: bold;
     text-transform: uppercase;
@@ -149,6 +165,10 @@ nav ul li a.active::before {
     transition: scale 1.5s, border-color 2s;
     border-color: #EE6D5C;
     box-shadow: 0 0 15px;
+}
+
+.main-header i {
+    transform: translateX(20px);
 }
 
 .main-header img {
@@ -239,6 +259,32 @@ nav ul li a.active::before {
     align-items: end;
 }
 
+.right-part button {
+    display: block;
+    border: 1px solid white;
+    justify-content: center;
+    align-items: center;
+    border-color: rgb(0, 0, 0);
+    background: none;
+    max-width: 80%;
+    padding: 10px;
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1px;
+    user-select: none;
+}
+
+.right-part button:hover {
+    cursor: pointer;
+    scale: 1.1;
+    transition: scale 1.2s, border-color 2s;
+    border: 2px solid #EE6D5C;
+    box-shadow: 0 0 15px;
+}
+
 .left-part h2 {
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -290,10 +336,6 @@ nav ul li a.active::before {
     margin-bottom: 50px;
 }
 
-.main-news-container a {
-
-    text-decoration: none;
-}
 
 .link {
     position: absolute;
@@ -301,7 +343,6 @@ nav ul li a.active::before {
     font-size: 0.9rem;
     font-weight: bold;
     text-transform: uppercase;
-    text-decoration: none;
     letter-spacing: 2px;
     text-align: left;
 }
@@ -347,12 +388,10 @@ nav ul li a.active::before {
     font-size: 1rem;
     font-weight: bold;
     margin-top: 17px;
-    text-decoration: none;
 
 }
 
 .contact-list a {
-    text-decoration: none;
     font-weight: bold;
 }
 
