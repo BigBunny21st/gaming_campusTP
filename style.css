@@ -295,17 +295,167 @@ nav ul li a.active::before {
 .link {
     position: absolute;
     bottom: 0;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-align: left;
 }
 
 .main-news a:hover {
     color: rgb(236, 95, 93);
     transition: 1s ease;
-    font-size: 1.2rem;
+    font-size: 1rem;
     user-select: none;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 125px;
+}
+
+.contact-list {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-items: center;
+    text-align: left;
+    position: relative;
+}
+
+.contact-list:after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    background: #dfdcdc;
+    bottom: -60px;
+
+}
+
+.contact-list h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact-list ul li {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 17px;
+    text-decoration: none;
+
+}
+
+.contact-list a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.list p {
+    margin-top: 0px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+
+}
+
+
+
+.contact-medias {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-items: start;
+    padding-top: 125px;
+}
+
+.list h5 {
+    margin-bottom: 15px;
+}
+
+.network {
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+.list h6 {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.footer-logos i {
+    font-size: 1.1rem;
+    margin: 0 15px 30px 0px;
+
+}
+
+.copyright {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-medias {
+    padding: 100px 0 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto
+}
+
+
+
+.medias-text {
+    text-align: left;
+    width: 30%;
+}
+
+.medias-text h3 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.medias-text p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.medias-logos {
+    display: flex;
+    align-items: center;
+
+}
+
+.medias-logos img {
+    padding: 0 35px;
+    width: 100%;
+    scale: 1.5;
+
+}
+
+footer {
+    background: var(--color4);
+    text-align: center;
+    padding: 25px;
+
+}
+
+footer h3 {
+    color: whitesmoke;
+    font-weight: 700;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+    margin: 0 auto;
+
 }
