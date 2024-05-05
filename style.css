@@ -21,7 +21,7 @@
     --color1: rgb(24, 28, 31);
     --color2: rgb(0, 0, 0);
     --color3: rgb(112, 9, 144);
-    --color4: rgb(24, 28, 31);
+    --color4: rgb(16, 15, 16);
 
 }
 
@@ -121,28 +121,191 @@ nav ul li a.active::before {
     text-transform: uppercase;
     color: white;
     padding: 25px;
+    letter-spacing: 1px;
 }
 
 .main-header button {
     display: block;
+    border: 2px solid white;
     justify-content: center;
     align-items: center;
     border-color: white;
     background: none;
-    width: 25%;
-    padding: 10px;
-    font-size: 1rem;
+    width: 22%;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1px;
+
+}
+
+.main-header button:hover {
+    cursor: pointer;
+    scale: 1.1;
+    transition: scale 1.5s, border-color 2s;
+    border-color: #EE6D5C;
+    box-shadow: 0 0 15px;
+}
+
+.main-header img {
+    display: flex;
+}
+
+.header-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 50px auto;
+    padding: 0 200px;
+}
+
+.icon-part {
+    display: flex;
+    background: var(--color4);
+}
+
+.icon-part-container {
+    display: flex;
+    flex-direction: row;
+    padding: 125px;
+}
+
+.list-icon-part {
+
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+
+}
+
+.list-icon-part h3 {
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.list-icon-part p {
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 25px;
+
+}
+
+.list-icon-part button {
+    display: block;
+    border: 1px solid white;
+    justify-content: center;
+    align-items: center;
+    border-color: white;
+    background: none;
+    width: 50%;
+    padding: 12px;
+    font-size: 0.9rem;
     color: white;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 1px;
+    user-select: none;
+}
+
+.list-icon-part button:hover {
+    cursor: pointer;
+    scale: 1.1;
+    transition: scale 1.2s, border-color 2s;
+    border: 2px solid #EE6D5C;
+    box-shadow: 0 0 15px;
+}
+
+.news-part {
+    display: block;
+    margin-top: 0;
+    padding: 125px;
+    background: rgb(248, 246, 248);
+}
+
+.header-news {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: end;
+}
+
+.left-part h2 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: lighter;
 
 }
 
-.main-header img {
+.main-news {
     display: flex;
+    padding-top: 25px;
+    justify-content: space-around;
+    align-items: center;
 
+}
 
+.main-news-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    max-width: 1100px;
+    margin: 45px auto;
+    padding: 0;
+}
 
+.main-news-container>div {
+    position: relative;
+    max-width: 25%;
+}
+
+.main-news-container h4 {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.mn-pic img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 1px 5px 10px #888;
+}
+
+.main-news-container p {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.main-news-container a {
+
+    text-decoration: none;
+}
+
+.link {
+    position: absolute;
+    bottom: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+    text-align: left;
+}
+
+.main-news a:hover {
+    color: rgb(236, 95, 93);
+    transition: 1s ease;
+    font-size: 1.2rem;
+    user-select: none;
 }
