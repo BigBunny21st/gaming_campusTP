@@ -505,17 +505,117 @@ footer ul {
 /********************Medias Query************/
 /**/
 
+@media screen and (max-width: 1710px) {
+    .main-header button {
+
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1545px) {
+    .main-header button {
+
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 1545px) {
+    .main-header i {
+
+        transform: translateX(2px);
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .main-header button {
+
+        font-size: 0.9rem;
+        width: 30%;
+
+
+    }
+
+    .main-header i {
+
+        transform: translateX(0px);
+    }
+
+    .icon-part-container p {
+
+        font-size: 0.8rem;
+    }
+}
+
 @media screen and (max-width: 1290px) {
 
     nav {
         font-size: 1rem;
     }
+
+    .icon-part button {
+
+        font-size: 0.7rem;
+    }
+
+
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1230px) {
 
-    nav {
-        font-size: 0.8rem;
+    .icon-part-container {
+        display: block;
+        padding: 15px auto;
+    }
+
+    .icon-part-container p {
+
+        font-size: 1rem;
+    }
+
+    .icon-part button {
+
+        font-size: 1rem;
+        margin-bottom: 70px;
+    }
+
+    .header-news {
+
+        display: block;
+
+    }
+
+    .right-part button {
+        display: flex;
+        margin: 30px auto;
+
+
+    }
+
+
+
+
+    @media screen and (max-width: 1200px) {
+
+        nav {
+            font-size: 0.8rem;
+        }
+    }
+
+    @media screen and (max-width: 1170px) {
+
+        .contact-list {
+            justify-items: stretch;
+        }
+
+        .medias-text h3 {
+            font-size: 0.9rem;
+
+        }
+
+        .medias-text p {
+            font-size: 0.8rem;
+
+        }
     }
 }
 
