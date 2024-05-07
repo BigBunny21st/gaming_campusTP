@@ -654,22 +654,22 @@ footer ul {
         display: none;
     }
 
-}
+    .main-news-container {
+        display: block;
+    }
 
-.main-news-container {
-    display: block;
-}
+    .main-news-container div {
+        max-width: 90%;
+        margin: 0 auto;
+        padding-bottom: 15px;
+        padding-top: 10px;
+    }
 
-.main-news-container div {
-    max-width: 90%;
-    margin: 0 auto;
-    padding-bottom: 15px;
-    padding-top: 10px;
-}
-
-.contact {
-    display: none;
+    .contact {
+        display: none;
 
 
+
+    }
 
 }
