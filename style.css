@@ -599,6 +599,10 @@ footer ul {
         nav {
             font-size: 0.8rem;
         }
+
+        .medias-logos img {
+            width: 110%;
+        }
     }
 
     @media screen and (max-width: 1180px) {
@@ -624,4 +628,48 @@ footer ul {
     nav {
         font-size: 0.7rem;
     }
+
+    footer ul {
+
+        scale: 0.9;
+    }
+
+    .medias-logos img {
+        width: 150%;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+
+
+    footer ul {
+        display: flex;
+        flex-wrap: wrap;
+        scale: 1;
+        max-width: 90%;
+
+    }
+
+    nav li {
+        display: none;
+    }
+
+}
+
+.main-news-container {
+    display: block;
+}
+
+.main-news-container div {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+.contact {
+    display: none;
+
+
+
 }
